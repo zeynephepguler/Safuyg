@@ -8,7 +8,7 @@
 
 
     <button type="button" name="button" class="button" onclick="location='ogrencianasayfa'"> Giriş Yap </button>
-  <button type="button" name="button" class="button" onclick="location='kayitol'">  Şifremi Unuttum</button>
+  <button type="button" name="button" class="button" onclick="location=''">  Şifremi Unuttum</button>
 </body>
 </div>
 @stop
