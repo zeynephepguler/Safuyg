@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Resource\View;
+use App\Http\Controllers\UseConroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -49,9 +50,5 @@ Route::get('/admin', function()
   return view('layouts.admin');
 })->name('admin');
 
-Route::get('/kayitol', function()
-{
-  return view('layouts.kayitol');
-})->name('admin');
-
-Route::View("/Adminanasayfa","layouts.adminanasayfa");
+Route::view('kayitol','layouts.kayitol');
+Route::post('kayitol',[UseConroller::class,'alma']);
