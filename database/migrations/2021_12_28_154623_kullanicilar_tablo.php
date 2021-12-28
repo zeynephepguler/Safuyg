@@ -16,9 +16,13 @@ class KullanicilarTablo extends Migration
         Schema::create('Kullanis', function (Blueprint $table) {
             $table->id();
             $table->string('ad');
-
             $table->string('no')->unique();
-
+            $table->string('soyad');
+            $table->string('telefon');
+            $table->string('sifre');
+            $table->string('email');
+            $table->string('adres');
+            $table->string('tc');
             $table->timestamps();
         });
     }
