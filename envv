@@ -52,3 +52,5 @@ PUSHER_APP_CLUSTER=mt1
 
 MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
 MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
+
+http://localhost/phpmyadmin/index.php?route=/sql&server=1&db=kobs&table=kullanis&pos=0
