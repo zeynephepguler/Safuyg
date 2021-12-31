@@ -24,14 +24,14 @@
       <div class="but"> <center>
         <input name="no" type="number" pattern="\d" size="50px" placeholder="Öğrenci No"> <br>
         <input name="ad" type="text" size="50px" placeholder="Ad"><br>
-        <input type="text" size="50px" placeholder="Soyad"><br>
-        <input type="password" size="50px" placeholder="Şifre"><br>
+        <input name="soyad"type="text" size="50px" placeholder="Soyad"><br>
+        <input name="sifre"type="password" size="50px" placeholder="Şifre"><br>
         <input type="password" size="50px" placeholder="Şifre Tekrarı"><br>
-        <input type="email" size="50px" placeholder="E-posta"><br>
-        <input type="tel" size="50px" placeholder="Telefon"><br>
-        <input type="text" pattern=“\d{11} size="50px" placeholder="TC Kimlik"><br>
+        <input name="email" type="email" size="50px" placeholder="E-posta"><br>
+        <input name="telefon"type="tel" size="50px" placeholder="Telefon"><br>
+        <input name="tc"type="number" pattern=“\d{11} size="50px" placeholder="TC Kimlik"><br>
         <input type="date" size="50px" placeholder="Doğum Tarihi"><br>
-        <input type="text" size="50px" placeholder="Adres"><br>
+        <input name="adres"type="text" size="50px" placeholder="Adres"><br>
         <select>
         <option> Sınıf Seçiniz </option>
         <option> Hazırlık </option>

@@ -13,7 +13,7 @@ class KullanicilarTablo extends Migration
      */
     public function up()
     {
-        Schema::create('Kullanis', function (Blueprint $table) {
+        Schema::create('Kullani', function (Blueprint $table) {
             $table->id();
             $table->string('ad');
             $table->string('no')->unique();
