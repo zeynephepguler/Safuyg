@@ -14,11 +14,13 @@
            @csrf
               <div class="form-group">
                  <label>Numara</label>
+                 <br>
                  <input type="text" class="form-control" name="no" placeholder="Numaranızı Giriniz" value="{{ old('no') }}">
                  <span class="text-danger">@error('no'){{ $message }} @enderror</span>
               </div>
               <div class="form-group">
                  <label>Şifre</label>
+                 <br>
                  <input type="password" class="form-control" name="sifre" placeholder="Şifrenizi Giriniz">
                  <span class="text-danger">@error('sifre'){{ $message }} @enderror</span>
               </div>
