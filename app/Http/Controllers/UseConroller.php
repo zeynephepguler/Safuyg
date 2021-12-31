@@ -54,6 +54,11 @@ class UseConroller extends Controller
             }
         }
     }
+    function bilgiler(){
+       $data = ['LoggedUserInfo'=>Kullani::where('id','=', session('LoggedUser'))->first()];
+       return view('layouts.ogrencianasayfa', $data);
 
-    
+   }
+
+
 }

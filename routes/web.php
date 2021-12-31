@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Resource\View;
 use App\Http\Controllers\UseConroller;
-use App\Http\Controllers\KontrolController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +20,7 @@ use App\Http\Controllers\KontrolController;
 Route::get('/', function()
 {
   return view('layouts.anasayfa');
-})->name('anasayfa');
+})->name('cıkıs');
 
 
 Route::get('/ogrencianasayfa', function()
@@ -52,3 +52,4 @@ Route::view('kayitol','layouts.kayitol')->name('kayitol');
 Route::post('kayitol',[UseConroller::class,'alma']);
 Route::post('ogrencigiris',[UseConroller::class,'kontrol'])->name('kayitkontrol');
 Route::get('/ogrencigiris',[UseConroller::class,'ogrencigiris']);
+Route::get('/ogrencianasayfa',[UseConroller::class, 'bilgiler']);
