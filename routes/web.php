@@ -48,6 +48,11 @@ Route::get('/admin', function()
   return view('layouts.admin');
 })->name('admin');
 
+Route::get('/kisiselbilgiler', function()
+{
+  return view('layouts.kisiselbilgiler');
+});
+
 Route::view('kayitol','layouts.kayitol')->name('kayitol');
 Route::post('kayitol',[UseConroller::class,'alma']);
 Route::post('ogrencigiris',[UseConroller::class,'kontrol'])->name('kayitkontrol');
