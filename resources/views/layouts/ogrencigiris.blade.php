@@ -3,6 +3,13 @@
 <body>
     <link rel="stylesheet" href="{{ asset('css/a.css') }}" type="text/css">
 
+    <div class="div1" >
+    <ul ><left>
+      <li><a href="/kayitol">Kayıt Ol</a></li>
+      <li><a href="/ogrencigiris">Giriş Yap</a></li>
+      <li><a href="/sifremiunuttum">Şifremi Unuttum</a></li>
+    </ul>
+    </div>
 
 <form action="{{ route('kayitkontrol') }}" method="post">
             @if(Session::get('fail'))
