@@ -53,6 +53,11 @@ Route::get('/kisiselbilgiler', function()
   return view('layouts.kisiselbilgiler');
 });
 
+Route::get('/sifremiunuttum', function()
+{
+  return view('layouts.sifremiunuttum');
+});
+
 Route::view('kayitol','layouts.kayitol')->name('kayitol');
 Route::post('kayitol',[UseConroller::class,'alma']);
 Route::post('ogrencigiris',[UseConroller::class,'kontrol'])->name('kayitkontrol');
