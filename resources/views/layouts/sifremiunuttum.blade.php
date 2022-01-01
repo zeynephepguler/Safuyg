@@ -1,4 +1,4 @@
-@include('layouts.footer')
+
 
 @include('layouts.header')
 
@@ -29,3 +29,4 @@
 
   </body>
 </html>
+@include('layouts.footer')

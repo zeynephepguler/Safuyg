@@ -1,5 +1,3 @@
-@include('layouts.footer')
-
 @include('layouts.header')
 
 <!DOCTYPE html>
@@ -23,7 +21,6 @@
         @csrf
       <div class="but"> <center>
         <div class="mb-3">
-        <!-- <label for="">Upload Image</label> -->
         <input type="file" name="image" required class="course form-control"> <br>
         <input name="no" type="number" pattern="\d" size="50px" placeholder="Öğrenci No"> <br>
         <input name="ad" type="text" size="50px" placeholder="Ad"><br>
@@ -71,3 +68,4 @@
   </div>
 </form>
 </html>
+@include('layouts.footer')

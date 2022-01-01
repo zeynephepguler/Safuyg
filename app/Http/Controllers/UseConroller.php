@@ -54,7 +54,7 @@ class UseConroller extends Controller
             //check password
             if(Hash::check($request->sifre, $userInfo->sifre)){
                 $request->session()->put('LoggedUser', $userInfo->id);
-                return redirect('ogrencianasayfa');
+                return redirect('kisiselbilgiler');
 
             }else{
                 return back()->with('fail','Şifre Yanlış');
@@ -63,7 +63,7 @@ class UseConroller extends Controller
     }
     function bilgiler(){
        $data = ['LoggedUserInfo'=>Kullani::where('id','=', session('LoggedUser'))->first()];
-       return view('layouts.ogrencianasayfa', $data);
+       return view('layouts.kisiselbilgiler', $data);
 
    }
 

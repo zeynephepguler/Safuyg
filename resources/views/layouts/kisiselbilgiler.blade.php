@@ -9,33 +9,24 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Bilgilerim</title>
       <link rel="stylesheet" href="{{ asset('bootstrap-3.1.1/css/bootstrap.min.css') }}">
+      <link rel="stylesheet" href="{{ asset('css/a.css') }}" type="text/css">
   </head>
   <body>
-
       <div class="container">
            <div class="row">
               <div class="col-md-6 col-md-offset-3">
-                     <h4>Dashboard</h4><hr>
+                     <h4>Kişisel Bilgiler</h4><hr>
                      <table class="table table-hover">
-                        <thead>
-                          <th>Name</th>
-                          <th>Numarası</th>
-                          <th></th>
-                        </thead>
-                        <tbody>
-                           <tr>
-                              <td>{{ $LoggedUserInfo['ad'] }}</td>
-                              <td>{{ $LoggedUserInfo['soyad'] }}</td>
-                              <td>{{ $LoggedUserInfo['no'] }}</td>
-                              <td>{{ $LoggedUserInfo['telefon'] }}</td>
-                              <td>{{ $LoggedUserInfo['adres'] }}</td>
-                              <td>{{ $LoggedUserInfo['tc'] }}</td>
-                              <td><a href="{{ route('cıkıs') }}">Logout</a></td>
-                           </tr>
-                        </tbody>
+                       <tr><td class="tab">Numara:</td> <td class="tab2">{{ $LoggedUserInfo['no'] }}</td></tr>
+                       <tr><td class="tab">İsim:</td> <td class="tab2">{{ $LoggedUserInfo['ad'] }}</td></tr>
+                       <tr><td class="tab">Soyisim:</td> <td class="tab2">{{ $LoggedUserInfo['soyad'] }}</td></tr>
+                       <tr><td class="tab">Tc:</td> <td class="tab2">{{ $LoggedUserInfo['tc'] }}</td></tr>
+                       <tr><td class="tab">Doğum Tarihi:</td> <td class="tab2"></td> </tr>
+                       <tr><td class="tab">Telefon:</td> <td class="tab2">{{ $LoggedUserInfo['telefon'] }}</td></tr>
+                       <tr><td class="tab">E-mail:</td> <td class="tab2"> </td> </tr>
+                       <tr><td class="tab">Adres:</td> <td class="tab2">{{ $LoggedUserInfo['adres'] }}</td></tr>
+                       <tr><td><a href="{{ route('cıkıs') }}">Logout</a></td> <td> </td></tr>
                      </table>
-
-
               </div>
            </div>
       </div>

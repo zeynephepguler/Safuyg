@@ -16,7 +16,7 @@
       <div class="container">
            <div class="row">
               <div class="col-md-6 col-md-offset-3">
-                     <h4>Dashboard</h4><hr>
+                     <h4>Kişisel Bilgiler</h4><hr>
                      <table class="table table-hover">
                         <thead>
                           <th>Name</th>

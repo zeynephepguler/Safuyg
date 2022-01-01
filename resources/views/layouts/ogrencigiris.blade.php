@@ -27,8 +27,8 @@
               <div class="form-group">
                  <input type="password" class="form-control" name="sifre" placeholder="Şifrenizi Giriniz">
                  <span class="text-danger">@error('sifre'){{ $message }} @enderror</span>
-              </div>
-              <button type="submit" class="btn btn-block btn-primary">Sign In</button>
+              </div><br>
+              <button type="submit" class="btn btn-block btn-primary">Giriş Yap</button>
               <br>
               <a href="{{ route('kayitol') }}">Önce Kayıt Olmayı Deneyin</a>
            </form>
