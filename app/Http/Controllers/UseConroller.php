@@ -26,7 +26,14 @@ class UseConroller extends Controller
       $kullani->telefon=$req->telefon;
       $kullani->adres=$req->adres;
       $kullani->tc=$req->tc;
-
+      if($req->hasfile('image'))
+              {
+                  $file = $req->file('image');
+                  $extenstion = $file->getClientOriginalExtension();
+                  $filename = time().'.'.$extenstion;
+                  $file->move('uploads/ogrenci/', $filename);
+                  $kullani->image = $filename;
+              }
       $kullani->save();
       return redirect('ogrencigiris');
     }
@@ -59,6 +66,8 @@ class UseConroller extends Controller
        return view('layouts.ogrencianasayfa', $data);
 
    }
+
+
 
 
 }

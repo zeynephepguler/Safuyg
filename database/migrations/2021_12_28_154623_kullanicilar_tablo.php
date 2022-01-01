@@ -13,7 +13,7 @@ class KullanicilarTablo extends Migration
      */
     public function up()
     {
-        Schema::create('Kullani', function (Blueprint $table) {
+        Schema::create('kullanis', function (Blueprint $table) {
             $table->id();
             $table->string('ad');
             $table->string('no')->unique();
@@ -23,6 +23,7 @@ class KullanicilarTablo extends Migration
             $table->string('email');
             $table->string('adres');
             $table->string('tc');
+            $table->string('image');
             $table->timestamps();
         });
     }

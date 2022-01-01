@@ -19,9 +19,14 @@
       <li><a href="/">Şifremi Unuttum</a></li>
     </ul>
   </div>
-      <form method="post" action="kayitol">
+      <form method="post" action="kayitol" enctype="multipart/form-data">
         @csrf
       <div class="but"> <center>
+        <div class="mb-3">
+                          <label for="">Upload Image</label>
+                          <input type="file" name="image" required class="course form-control">
+                    
+
         <input name="no" type="number" pattern="\d" size="50px" placeholder="Öğrenci No"> <br>
         <input name="ad" type="text" size="50px" placeholder="Ad"><br>
         <input name="soyad"type="text" size="50px" placeholder="Soyad"><br>
