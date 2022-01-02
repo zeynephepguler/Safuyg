@@ -72,21 +72,40 @@ class UseConroller extends Controller
      $basvuru = new basvuru();
      $basvuru->öğrencino=$req->öğrencino;
      $basvuru->çap=$req->çap;
-     $basvuru->yazokulu=$req->yazoyataygeçiş;
+     $basvuru->yazokulu=$req->yazokulu;
      $basvuru->yataygeçiş=$req->yataygeçiş;
      $basvuru->dikeygeçiş=$req->dikeygeçiş;
      $basvuru->intibak=$req->intibak;
      $basvuru->save();
      return redirect('basvurularım');
 
-     $data = ['LoggedUserInfo'=>Kullani::where('id','=', session('LoggedUser'))->first()];
-     return view('layouts.basvurucap', $data);
+
    }
     public function cap()
    {
      $data = ['LoggedUserInfo'=>Kullani::where('id','=', session('LoggedUser'))->first()];
      return view('layouts.basvurucap', $data);
    }
+   public function dgs()
+  {
+    $data = ['LoggedUserInfo'=>Kullani::where('id','=', session('LoggedUser'))->first()];
+    return view('layouts.basvurudgs', $data);
+  }
+  public function intibak()
+ {
+   $data = ['LoggedUserInfo'=>Kullani::where('id','=', session('LoggedUser'))->first()];
+   return view('layouts.basvuruintibak', $data);
+ }
+ public function yazokulu()
+{
+  $data = ['LoggedUserInfo'=>Kullani::where('id','=', session('LoggedUser'))->first()];
+  return view('layouts.basvuruyazokulu', $data);
+}
+public function yty()
+{
+ $data = ['LoggedUserInfo'=>Kullani::where('id','=', session('LoggedUser'))->first()];
+ return view('layouts.basvuruytg', $data);
+}
 
 
 
