@@ -20,5 +20,16 @@
 <input name="ad" type="text" size="50px"> <br> <br>
 <label> Ekler: </label> <label>Trankript  Başarı Sıralaması </label>
 </div>
+<div >
+  <form action="{{ route('capkontrol') }}" method="post" enctype="multipart/form-data">
+    @csrf
+    <input type="hidden" name="çap" value="başvuru talebi var">
+    <input type="hidden" name="öğrencino" value="{{$LoggedUserInfo['no']}}">
+    <button type="submit" class="btn btn-block btn-primary" name="button" >Başvuru Yap</button>
 
+  </form>
+</div>
 @stop
+@php
+
+@endphp

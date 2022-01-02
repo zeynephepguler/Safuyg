@@ -93,3 +93,5 @@ Route::post('kayitol',[UseConroller::class,'alma']);
 Route::post('ogrencigiris',[UseConroller::class,'kontrol'])->name('kayitkontrol');
 Route::get('/ogrencigiris',[UseConroller::class,'ogrencigiris']);
 Route::get('/kisiselbilgiler',[UseConroller::class, 'bilgiler']);
+Route::post('basvurucap',[UseConroller::class,'basvuru'])->name('capkontrol');
+Route::get('/basvurucap',[UseConroller::class, 'cap']);

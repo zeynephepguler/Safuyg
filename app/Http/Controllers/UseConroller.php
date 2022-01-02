@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Kullani;
+use App\Models\basvuru;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rule;
 use Validator, Input, Redirect;
@@ -65,6 +66,26 @@ class UseConroller extends Controller
        $data = ['LoggedUserInfo'=>Kullani::where('id','=', session('LoggedUser'))->first()];
        return view('layouts.kisiselbilgiler', $data);
 
+   }
+   public function basvuru (Request $req)
+   {
+     $basvuru = new basvuru();
+     $basvuru->öğrencino=$req->öğrencino;
+     $basvuru->çap=$req->çap;
+     $basvuru->yazokulu=$req->yazoyataygeçiş;
+     $basvuru->yataygeçiş=$req->yataygeçiş;
+     $basvuru->dikeygeçiş=$req->dikeygeçiş;
+     $basvuru->intibak=$req->intibak;
+     $basvuru->save();
+     return redirect('basvurularım');
+
+     $data = ['LoggedUserInfo'=>Kullani::where('id','=', session('LoggedUser'))->first()];
+     return view('layouts.basvurucap', $data);
+   }
+    public function cap()
+   {
+     $data = ['LoggedUserInfo'=>Kullani::where('id','=', session('LoggedUser'))->first()];
+     return view('layouts.basvurucap', $data);
    }
 
 
