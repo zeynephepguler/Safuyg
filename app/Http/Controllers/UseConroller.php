@@ -54,7 +54,7 @@ class UseConroller extends Controller
             //check password
             if(Hash::check($request->sifre, $userInfo->sifre)){
                 $request->session()->put('LoggedUser', $userInfo->id);
-                return redirect('kisiselbilgiler');
+                return redirect('ogrencianasayfa');
 
             }else{
                 return back()->with('fail','Şifre Yanlış');
