@@ -68,6 +68,26 @@ Route::get('/basvurucap', function()
   return view('layouts.basvurucap');
 });
 
+Route::get('/basvuruytg', function()
+{
+  return view('layouts.basvuruytg');
+});
+
+Route::get('/basvurudgs', function()
+{
+  return view('layouts.basvurudgs');
+});
+
+Route::get('/basvuruintibak', function()
+{
+  return view('layouts.basvuruintibak');
+});
+
+Route::get('/basvuruyazokulu', function()
+{
+  return view('layouts.basvuruyazokulu');
+});
+
 Route::view('kayitol','layouts.kayitol')->name('kayitol');
 Route::post('kayitol',[UseConroller::class,'alma']);
 Route::post('ogrencigiris',[UseConroller::class,'kontrol'])->name('kayitkontrol');
