@@ -33,12 +33,6 @@
     box-shadow: 0 2px 0 #385e25, 0px 4px 4px rgba(0,0,0,0.4), inset 0px 2px 5px rgba(0,0,0,0.2);
 }
 
-#lb{
-  width: 700px;
-  height: 30px;
-  text-align: right;
-}
-
 input{
   width: 300px;
   height: 20px;
@@ -47,4 +41,10 @@ input{
 .d2{
   padding-left: 250px;
   text-align: left;
+}
+
+div label{
+  width: 200px;
+  display: inline-block;
+
 }
