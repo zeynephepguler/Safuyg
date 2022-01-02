@@ -92,4 +92,4 @@ Route::view('kayitol','layouts.kayitol')->name('kayitol');
 Route::post('kayitol',[UseConroller::class,'alma']);
 Route::post('ogrencigiris',[UseConroller::class,'kontrol'])->name('kayitkontrol');
 Route::get('/ogrencigiris',[UseConroller::class,'ogrencigiris']);
-Route::get('/ogrencianasayfa',[UseConroller::class, 'bilgiler']);
+Route::get('/kisiselbilgiler',[UseConroller::class, 'bilgiler']);
